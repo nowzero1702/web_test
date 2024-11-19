@@ -17,7 +17,7 @@ app.use(express.static('src/public'));
 app.use('/', homeRouter); // 라우터 등록
 
 // 서버 시작
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server is running at http://localhost:${PORT}`);
 });
 
